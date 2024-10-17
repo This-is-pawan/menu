@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: pink;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+.empty {
+  width: 100px;
+  height: 5px;
+  border-radius: 20px;
+  background: rgb(130, 85, 197);
+  margin: 3px auto;
+}
+
+.btn {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid pink;
+  letter-spacing: 2px;
+  padding: 5px;
+  color: #fff;
+  border: #fff;
+  margin: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: rgb(34, 98, 98);
+  transition: all 1s ease;
+  &:hover {
+    background: rgb(169, 181, 181);
+    color: black;
+  }
+}
+
+.alignBtn {
+  display: flex;
+  justify-content: center;
+}
+.main{
+  margin: 2rem;
+}
+.menu-item {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2px;
+  text-align: center;
+}
+.align {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid goldenrod ;
+
+}
+
+.menu-info h3 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: palevioletred;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+}
+.text-align {
+border-bottom: 2px dotted;
+padding: 5px;
+
+}
+.menu-info p{
+  /* background: tan; */
+  margin-top:2rem ;
+  
+}
+
+
+@media screen and (min-width: 1000px) {
+  
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid goldenrod ;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .menu-info {
+    width: 100%;
+    display: flex;
+    text-align: justify;
+  }
+
+  .text-align {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text{
+    text-transform: capitalize;
+    height: 200px;
+    margin:0 0.5rem ;
+  }
+  
+  .menu-info h3 ,span{
+    
+   
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .menu-info p {
+  margin:5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+}
+ 
+
+}
+@media screen and (min-width:1200px) {
+  .main {
+    max-width: 90vw;
+    place-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
